@@ -1,0 +1,42 @@
+package util;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class PageLogin extends Utils{
+	
+	public PageLogin() {
+		PageFactory.initElements(driver, this);
+	}
+		@FindBy(xpath="//*[@class='_2IX_2- VJZDxU']")
+		public WebElement username;
+		@FindBy(xpath="//*[@class='_2IX_2- _3mctLh VJZDxU']")
+		public WebElement password;
+		@FindBy(xpath="//*[@class='_2KpZ6l _2HKlqd _3AWRsL']")
+		public WebElement login;
+		@FindBy(id="location1")
+		public WebElement location;
+		@FindBy(xpath="//*[@class='_2KpZ6l _2doB4z']")
+		public WebElement discard;
+		@FindBy(xpath="//*[@class='_1_3w1N']")
+		public WebElement loginbutton;
+		@FindBy(xpath="(//*[@class='xtXmba'])[4]")
+		public WebElement fashion;
+		@FindBy(xpath="//*[@class='_6WOcW9 _2-k99T']")
+		public WebElement mensfoot;
+		@FindBy(xpath="(//div[@class='exehdJ'])[1]")
+		public WebElement loggedusername;
+		@FindBy(xpath="//span[text()='Your username or password is incorrect']")
+		public WebElement passworderror;
+		@FindBy(xpath="(//div[@class='exehdJ'])[1]")
+		public WebElement mouseover;
+		@FindBy(xpath="(//a[@class='_2kxeIr'])[10]")
+		public WebElement logout;
+		
+		
+		
+		
+
+
+}
